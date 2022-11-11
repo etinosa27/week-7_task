@@ -1,4 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.slide {
+    display: none;
+}
+
 .benz{
-    display: flex;
-    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.previous, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: none;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next{
+    right: 0;
+    color:none ;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover{
+    background-color:blue ;
+}
+
+img {
+    vertical-align: middle;
+    
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ;
 }

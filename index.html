@@ -10,13 +10,43 @@
 <body>
     <main>
         <div class="benz">
-            <img  src="Benz.jpg" alt="" height="300px" width="200px">
-            <img src="Benz1.jpg" alt="" height="300px" width="200px">
-            <img src="Benz2.avif" alt="" height="300px" width="200px">
-            <img src="Benz3.webp" alt="" height="300px" width="200px">
-            <img src="Benz4.jpg" alt="" height="300px" width="200px">
-            <img src="Benz5.jpg" alt="" height="300px" width="200px">
+            <div class="slide">
+                <img  src="Benz.jpg" alt="image of Benzzema" width="100%" >
+                
+            </div>
+           <div class="slide">
+                <img src="Benz1.jpg" alt="image of Benzzema" width="100%" height="50%">
+               
+           </div>
+           <div class="slide">
+                <img src="Benz2.avif" alt="image of Benzzema" width="100%" height="50%">
+                
+           </div>
+           <div class="slide">
+           
+                <img src="Benz3.webp" alt="image of Benzzema" width="100%" height="500px">
+                
+           </div>
+           <div class="slide">
+                <img src="Benz4.jpg" alt="image of Benzzema" width="100%">
+                
+           </div>
+           <div class="slide">
+                <img src="Benz5.jpg" alt="image of Benzzema" width="100%">
+               
+           </div>
+           <a class="previous" onclick="freshslide(-1)">❮</a>
+           <a class="next" onclick="freshslide(1)">❯</a>
+           
         </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+          </div>
     </main>
     <script src="script.js"></script>
 </body>
